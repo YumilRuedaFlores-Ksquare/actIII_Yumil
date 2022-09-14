@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+
+    <!--Title-->
+  <header class="w-full" style="text-align: center">
+    <h1> Survey form ITK </h1>
+
+  </header>
+
+    <!--
+DONE    I can write my name.
+DONE    I can write my email.
+DONE    I get asked a question that requires a numerical answer with no option to write letters.
+DONE    I can select an option from a dropdown menu.
+DONE    I can check if I want to take another survey later.
+DONE    I can write a comment to the Interviewer with my feedback or suggestions for the survey.
+DONE    I can use radio buttons to choose an option
+    -->
+
+
+    <!--Survey section-->
+    <fieldset style="background-color: rgb(0, 0, 0, 0.5);">
+        <legend style="background-color: rgb(0, 0, 0, 0.7); color: white;"> Answer the following questions</legend>
+
+        <div class="flex-col ">
+            <!-- 1.-name-->
+            <form style="display:inline-block; width: 20%;" >
+                <div class = "form-element">
+                    <label for="full-name"> Full Name</label>
+                    <input type="text" name="fullname" id="full-name">
+                </div>
+            </form>
+
+            <!-- 2.-email-->
+            <form style="display:inline-block; width: 20%;">
+                <div class = "form-element">
+                    <label for="email"> Email</label>
+                    <input type="text" name="firstName" id="first-name">
+                </div>
+            </form>
+
+            <!-- 3.-Numerical-->
+            <form style="display:inline-block; width: 20%;">
+                <div class="form-element">
+                    <label for="someid">Numerical answer</label>
+                    <input type="number" name="someid" />
+                </div>
+            </form>
+
+        </div>
+
+        
+
+ 
+        <!-- 4.-Dropmenu-->
+        <form>
+            <div class="form-element">
+                <label form="select-for-children"> Amount of children</label>
+                <select name="amountOfChildren" id="select-for-children">
+                    <option value="">Select an option </option>
+                    <option value="1">1 </option>
+
+                </select>
+            </div>
+        </form>
+
+        <!-- 5.-Check-->
+        <fieldset>
+            <legend>Choose your monster's features:</legend>
+        
+            <div>
+            <input type="checkbox" id="scales" name="scales"
+                    checked>
+            <label for="scales">Scales</label>
+            </div>
+        
+            <div>
+            <input type="checkbox" id="horns" name="horns">
+            <label for="horns">Horns</label>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <!-- 6.-Comment-->
+        <form>
+            <div class="form-element">
+                <label for="textarea">Coments</label>
+                <textarea name="comment" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+
+        <!-- 7.-Radio buttons-->
+        <fieldset>
+            <legend>Select a maintenance drone:</legend>
+        
+            <div>
+            <input type="radio" id="huey" name="drone" value="huey"
+                    checked>
+            <label for="huey">Huey</label>
+            </div>
+        
+            <div>
+            <input type="radio" id="dewey" name="drone" value="dewey">
+            <label for="dewey">Dewey</label>
+            </div>
+        
+            <div>
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Louie</label>
+            </div>
+        </fieldset>
+
+    </fieldset>
+    
+    
+    
+
+    
+</body>
+</html>
