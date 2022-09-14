@@ -11,9 +11,8 @@
     <!--Title-->
   <header class="w-full" style="text-align: center">
     <h1> Survey form ITK </h1>
-
   </header>
-
+<p>Context: Its a survey for a blog...</p>
     <!--
 DONE    I can write my name.
 DONE    I can write my email.
@@ -27,11 +26,23 @@ DONE    I can use radio buttons to choose an option
 
     <!--Survey section-->
     <fieldset style="background-color: rgb(0, 0, 0, 0.5);">
-        <legend style="background-color: rgb(0, 0, 0, 0.7); color: white;"> Answer the following questions</legend>
+        <legend style="background-color: rgb(0, 0, 0, 0.7); color: white;"> Do you wanna give us your oppinion?</legend>
 
-        <div class="flex-col ">
+
+
+        <div class="block " style="width:fit-content; display: inline-block;">
+            
+            <!-- 6.-Comment-->
+            <form>
+                <div class="form-element">
+                    <label for="textarea">Write your comment here...</label>
+                    <br>
+                    <textarea name="comment" id="textarea" cols="50" rows="10" style="width: 100%;;" ></textarea>
+                </div>
+            </form>
+
             <!-- 1.-name-->
-            <form style="display:inline-block; width: 20%;" >
+            <form style="display:inline-block; width: auto;" >
                 <div class = "form-element">
                     <label for="full-name"> Full Name</label>
                     <input type="text" name="fullname" id="full-name">
@@ -39,84 +50,74 @@ DONE    I can use radio buttons to choose an option
             </form>
 
             <!-- 2.-email-->
-            <form style="display:inline-block; width: 20%;">
+            <form style="display:inline-block; width: auto;">
                 <div class = "form-element">
                     <label for="email"> Email</label>
-                    <input type="text" name="firstName" id="first-name">
+                    <input type="text" name="email" id="email">
                 </div>
             </form>
 
             <!-- 3.-Numerical-->
-            <form style="display:inline-block; width: 20%;">
+            <form style="display:inline-block; width: auto;">
                 <div class="form-element">
-                    <label for="someid">Numerical answer</label>
-                    <input type="number" name="someid" />
+                    <label for="someid">Give us a rate 1-10</label>
+                    <input type="number" name="someid" min="1" max="10" value="5" />
+                </div>
+            </form>
+
+            <!-- 4.-Dropmenu-->
+            <form style="display:inline-block; width: auto;">
+                <div class="form-element">
+                    <label form="select-for-children"> Select your occupation.</label>
+                    <select name="amountOfChildren" id="select-for-children">
+                        <option value="">Select an option </option>
+                        <option value="1">Student </option>
+                        <option value="1">Teacher </option>
+                        <option value="1">Enginner </option>
+                        <option value="1">Freelancer </option>
+                        <option value="1">Other... </option>
+
+                    </select>
                 </div>
             </form>
 
         </div>
-
-        
-
  
-        <!-- 4.-Dropmenu-->
-        <form>
-            <div class="form-element">
-                <label form="select-for-children"> Amount of children</label>
-                <select name="amountOfChildren" id="select-for-children">
-                    <option value="">Select an option </option>
-                    <option value="1">1 </option>
+        
 
-                </select>
-            </div>
-        </form>
 
-        <!-- 5.-Check-->
         <fieldset>
-            <legend>Choose your monster's features:</legend>
+            <legend>Extra questions...</legend>
         
-            <div>
-            <input type="checkbox" id="scales" name="scales"
-                    checked>
-            <label for="scales">Scales</label>
+            <div class="Extra-questionss" >
+                <!-- 5.-Check-->
+                <div style="display:initial-block;">
+                    <input type="checkbox" id="scales" name="scales"
+                            checked>
+                    <label for="scales"> Do you want to take another survey later? </label>
+                </div>
+                <p>Was this website useful for you?</p>
+                <!-- 7.-Radio buttons-->
+                <div class="radio-buttons" style="display:initial-block;">
+                    <div>
+                        <input type="radio" id="huey" name="drone" value="huey"
+                                checked>
+                        <label for="huey">Yes</label>
+                    </div>
+                
+                    <div>
+                        <input type="radio" id="dewey" name="drone" value="dewey">
+                        <label for="dewey">Nos</label>
+                    </div>
+                
+                    
+                </div>
+
             </div>
-        
-            <div>
-            <input type="checkbox" id="horns" name="horns">
-            <label for="horns">Horns</label>
-            </div>
+       
         </fieldset>
 
-        <br>
 
-        <!-- 6.-Comment-->
-        <form>
-            <div class="form-element">
-                <label for="textarea">Coments</label>
-                <textarea name="comment" id="textarea" cols="30" rows="10"></textarea>
-            </div>
-        </form>
-
-        <!-- 7.-Radio buttons-->
-        <fieldset>
-            <legend>Select a maintenance drone:</legend>
-        
-            <div>
-            <input type="radio" id="huey" name="drone" value="huey"
-                    checked>
-            <label for="huey">Huey</label>
-            </div>
-        
-            <div>
-            <input type="radio" id="dewey" name="drone" value="dewey">
-            <label for="dewey">Dewey</label>
-            </div>
-        
-            <div>
-            <input type="radio" id="louie" name="drone" value="louie">
-            <label for="louie">Louie</label>
-            </div>
-        </fieldset>
 
     </fieldset>
     
